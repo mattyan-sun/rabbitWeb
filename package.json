@@ -1,11 +1,24 @@
 {
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "ts-node src/app.ts"
   },
   "dependencies": {
-    "express": "^4.18.1"
+    "@types/express": "^4.17.21",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.19"
-  }
+    "@types/ejs": "^3.1.5",
+    "@types/node": "^20.10.5",
+    "nodemon": "^2.0.19",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "name": "rabbitweb",
+  "description": "Welcome to your shiny new Codespace running Express! We've got everything fired up and running for you to explore Express.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
