@@ -15,7 +15,7 @@
     "typescript": "^5.3.3"
   },
   "name": "rabbitweb",
-  "description": "Welcome to your shiny new Codespace running Express! We've got everything fired up and running for you to explore Express.",
+  "description": "I created rabbitWeb!",
   "version": "1.0.0",
   "main": "index.js",
   "keywords": [],

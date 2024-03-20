@@ -1,0 +1,56 @@
+body {
+    background-color: #353535;
+    margin: 0;
+}
+
+.contents {
+    margin: 0 0 0 0;
+    color: #ffffff;
+    /*font-family: "Arial";*/
+    font-size: 15pt;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(110, 110, 110);
+    font-size: 150px;
+    font-family: 'Arial'; 
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+h1.title{
+    font-size: 30px;
+    margin: 5px 0 5px 0;
+}
+
+.header {
+    background-color: #353535;
+    padding: 0px;
+}
+
+ul.headerMenu {
+    /*横並びのボックスを作る*/
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 10px 0 40px 0;
+    padding: 0;
+}
+
+ul.headerMenu li {
+    width: 100%;
+    background-color: #ffffff;
+    list-style: none;
+    margin-left: 1px;
+    padding: 6px;
+    border: 1px solid #000;
+    text-align: center;
+    color: #000;
+}
+
+a:hover {
+    color: #ffffff;
+    padding: 10px;
+    background-color: #353535;
+}
+

@@ -1,4 +1,5 @@
 {
+  //dockerという実行環境を設定
   //docker image（テンプレートファイル）をダウンロード　typescriptやnode.jsを含む
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   //ホストマシンのCPUのコア数の要件
