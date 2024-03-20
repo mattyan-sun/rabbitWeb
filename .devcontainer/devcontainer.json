@@ -1,14 +1,21 @@
 {
+  //docker image（テンプレートファイル）をダウンロード　typescriptやnode.jsを含む
   "image": "mcr.microsoft.com/devcontainers/universal:2",
+  //ホストマシンのCPUのコア数の要件
   "hostRequirements": {
     "cpus": 4
   },
+  //以下codespaceの作成更新時の設定
+  //起動中の待機方法
   "waitFor": "onCreateCommand",
+  //npm installを行い、node.jsプロジェクトの依存関係を管理
   "updateContentCommand": "npm install",
   "postCreateCommand": "",
+  //起動後node.jsプロジェクトでアプリケーションの開始
   "postAttachCommand": {
     "server": "npm start"
   },
+  //プロジェクトが開かれた時に自動で開かれるファイルを設定
   "customizations": {
     "codespaces": {
       "openFiles": [
@@ -16,6 +23,7 @@
       ]
     }
   },
+  //
   "portsAttributes": {
     "3000": {
       "label": "Application",
