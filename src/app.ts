@@ -1,4 +1,5 @@
 //import express from 'express';
+//import mysql from 'mysql';
 import { homeRouter } from './routes/home'; //homeRouterをapp.tsから見て相対パスでtop.tsを指定
 import { aboutRouter } from './routes/about';
 import { attendanceRouter } from './routes/attendance';
@@ -9,8 +10,10 @@ import { tournamentRouter } from './routes/tournament';
 import { othersRouter } from './routes/others';
 
 const express = require('express');
+const mysql = require('mysql');
 const app = express();
 const port = 3000;
+
 
 app.set('view engine', 'ejs'); //ejsファイルを使うことを指定
 app.set('views', 'src/views'); //開くejsファイルがある場所を指定
@@ -27,7 +30,13 @@ app.use('/bbs', bbsRouter);
 app.use('/tournament', tournamentRouter);
 app.use('/others', othersRouter);
 
+const con = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: 'password'
+});
+
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`listening on port ${port}`);
 });
 

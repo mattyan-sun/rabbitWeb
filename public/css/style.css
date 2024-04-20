@@ -21,7 +21,8 @@ h1 {
 }
 h1.title{
     font-size: 30px;
-    margin: 5px 0 5px 0;
+    margin: 5px 0px 5px 10px;
+    text-align: left;
 }
 
 .header {
@@ -48,6 +49,7 @@ ul.headerMenu li {
     color: #000;
 }
 
+/*カーソルを合わせ得たらリンクの色が変わる*/
 a:hover {
     color: #ffffff;
     padding: 10px;

@@ -1,7 +1,34 @@
 {
+  "name": "Node.js with Express and MySQL",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "app",
+  "postCreateCommand": "npm install",
+  "remoteUser": "node",
+  "forwardPorts": [3000],
+  "features": {
+      "docker-in-docker": {
+          "dockerComposeVersion": "3.8"
+      }
+  }
+}
+
+/*{
   //dockerという実行環境を設定
+  "name": "rabbitweb-creation",
   //docker image（テンプレートファイル）をダウンロード　typescriptやnode.jsを含む
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  //"image": "mcr.microsoft.com/devcontainers/universal:2",
+  //dockerの中にdockerを入れる（Mysqlを操作できるように）
+  "dockerComposeFile":["docker-compose.yml"],
+  "features": {
+    "docker-from-docker": {
+      "version": "latest"
+    }
+  },
+  "workspaceFolder": "/workspace",
+  "service": "app",
+  "shutdownAction": "stopCompose",
+  
+
   //ホストマシンのCPUのコア数の要件
   "hostRequirements": {
     "cpus": 4
@@ -33,3 +60,4 @@
   },
   "forwardPorts": [3000]
 }
+*/
