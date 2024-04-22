@@ -2,8 +2,9 @@
   "name": "Node.js with Express and MySQL",
   "dockerComposeFile": "/workspaces/rabbitWeb/docker-compose.yml",
   "service": "app",
+  "workspaceFolder": "/workspaces/rabbitWeb",
   "updateContentCommand": "npm install",
-  "postCreateCommand": "npm start",
+  //"postStartCommand": "npm start",
   "remoteUser": "node",
   "forwardPorts": [3000],
   "features": {
@@ -14,7 +15,7 @@
 }
 
 /*{
-  //dockerという実行環境を設定
+  //dockerという実行環境
   "name": "rabbitweb-creation",
   //docker image（テンプレートファイル）をダウンロード　typescriptやnode.jsを含む
   //"image": "mcr.microsoft.com/devcontainers/universal:2",

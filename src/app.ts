@@ -29,9 +29,9 @@ app.use('/movie', movieRouter);
 app.use('/bbs', bbsRouter);
 app.use('/tournament', tournamentRouter);
 app.use('/others', othersRouter);
-
+//
 const con = mysql.createConnection({
-  host: 'localhost',
+  host: 'db',
   user: 'root',
   password: 'password'
 });
