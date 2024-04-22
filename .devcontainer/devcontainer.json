@@ -1,8 +1,9 @@
 {
   "name": "Node.js with Express and MySQL",
-  "dockerComposeFile": "../docker-compose.yml",
+  "dockerComposeFile": "/workspaces/rabbitWeb/docker-compose.yml",
   "service": "app",
-  "postCreateCommand": "npm install",
+  "updateContentCommand": "npm install",
+  "postCreateCommand": "npm start",
   "remoteUser": "node",
   "forwardPorts": [3000],
   "features": {

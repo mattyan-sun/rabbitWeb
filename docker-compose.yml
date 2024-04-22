@@ -8,7 +8,7 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - .:/workspace
+      - web_data:/workspaces
     environment:
       MYSQL_HOST: db
       MYSQL_USER: root
@@ -26,4 +26,9 @@ services:
       MYSQL_DATABASE: my_database
     ports:
       - "3306:3306"
+    volumes:
+      - db_data:/workspaces
     
+volumes:
+  web_data:
+  db_data:
